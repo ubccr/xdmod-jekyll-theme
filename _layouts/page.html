@@ -59,7 +59,7 @@
 </head>
 <body>
   <div id="page-container">
-    <div id="page-header">
+    <div id="page-header" role="banner">
       <a href="http://open.xdmod.org"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/xdmod_logo.png" alt="XDMoD" /></a>
       <span class="maintitle">{% if site.xdmod_module_name %}{{ site.xdmod_module_name }} Module{% else %}Open XDMoD{% endif %} {{page.version}}</span>
     </div>
@@ -68,7 +68,7 @@
     {% endif %}
     <div id="page-body">
       <div class="clear"></div>
-      <div id="page-menu">
+      <div id="page-menu" role="navigation">
           {% if table_of_contents %}<div class="page-menu-toc">{{ table_of_contents }}</div>{% endif %}
           {% if site.version_list %}
             {% if site.latest_version == page.version %}
@@ -93,13 +93,13 @@
             {{ menu_markdown | markdownify }}
         {% endif %}
       </div>
-      <div id="page-content">
+      <div id="page-content" role="main">
         {% if doc_path %} <h1>{{ doc_path }}</h1> {% else %} <h1>{{ page.title }}</h1> {% endif %}
         {{ content }}
       </div>
       <div class="clear"></div>
     </div>
-    <div id="page-footer">
+    <div id="page-footer" role="contentinfo">
       <a href="https://www.buffalo.edu/ccr" target="_blank"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/ccr_logo.png" alt="Center for Computational Research"/></a>
     </div>
   </div>
