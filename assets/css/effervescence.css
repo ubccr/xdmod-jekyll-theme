@@ -89,6 +89,7 @@ span.maintitle {
     font-weight: bold;
     font-size: 3em;
     margin-left: 1ex;
+    line-height: 54pt;
 }
 
 .clear {
@@ -107,13 +108,22 @@ span.maintitle {
 }
 
 #page-header span {
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 #page-header img {
     display: inline-block;
-    margin: 1ex 0 0 1ex !important;
-    height: 3em;
+}
+
+#page-header .xdmodlogo {
+    height: 36pt;
+    margin-top: 9pt;
+    margin-bottom: 9pt;
+}
+
+#page-header .nsflogo {
+    height: 54pt;
+    margin: 5pt;;
 }
 
 #page-footer {
