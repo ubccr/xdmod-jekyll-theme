@@ -60,7 +60,7 @@
 <body>
   <div id="page-container">
     <div id="page-header" role="banner">
-      <a href="https://www.nsf.gov"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" class='nsflogo' /></a>
+      {% if page.style %}<a href="https://www.nsf.gov"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" class='nsflogo' /></a>{% endif %}
       <a href="http://open.xdmod.org"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/xdmod_logo.png" alt="XDMoD" class='xdmodlogo' /></a>
       <span class="maintitle">{% if site.xdmod_module_name %}{{ site.xdmod_module_name }} Module{% else %}Open XDMoD{% endif %} {{page.version}}</span>
     </div>
