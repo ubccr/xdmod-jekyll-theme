@@ -59,6 +59,7 @@
 </head>
 <body>
   <div id="page-container">
+    <div class="not-supported-banner"> {% unless site.version_list contains page.version %} <center> This version is <a href='/{{site.latest_version}}/support.html'>no longer supported</a>. Click <a href="/{{site.latest_version}}/">here</a> for the latest version. </center>  {% endunless %} </div>  
     <div id="page-header" role="banner">
       {% if page.style %}<a href="https://www.nsf.gov"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" class='nsflogo' /></a>{% endif %}
       <a href="http://open.xdmod.org"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/xdmod_logo.png" alt="XDMoD" class='xdmodlogo' /></a>
