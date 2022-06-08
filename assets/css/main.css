@@ -185,3 +185,11 @@ span.maintitle
     border: 2px solid #039;
     padding: 10px;
 }
+
+/* for unsupported versions */
+.not-supported-banner{
+    background-color:#EF9A9A;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
