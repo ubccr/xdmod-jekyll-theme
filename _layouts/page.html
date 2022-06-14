@@ -48,6 +48,7 @@
   <title>{% if site.xdmod_module_name %}{{site.xdmod_module_name}} {{doc_path}}{% else %}Open XDMoD{% if page.title != 'Open XDMoD' %} - {{ page.title }}{% endif %}{% endif %}</title>
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.theme_subdir }}/assets/css/{{style_sheet}}.css" />
+  {% unless page.version==site.latest_version %} <link rel="canonical" href="{{site.url}}/{{site.latest_version}}/{{page.name | remove: '.md' }}.html" /> {% endunless %}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
