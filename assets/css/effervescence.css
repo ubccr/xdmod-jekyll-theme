@@ -761,6 +761,10 @@ div.page-menu-toc {
 
 @media only screen and (max-width: 545px){
 
+    h1{
+        font-size: 1.8em;
+    }
+
     #page-header img {
     position: absolute;
     float: right;
@@ -769,6 +773,7 @@ div.page-menu-toc {
     }
 
     #page-header {
+        position: absolute;
         height: 130px;
     }
     
@@ -779,7 +784,6 @@ div.page-menu-toc {
     }
 
     #page-header .xdmodlogo {
-    
     left: 150px;
     height: 28pt;   
     
