@@ -789,12 +789,24 @@ div.page-menu-toc {
     
 }
 
+      #page-header .nsflogo {
+    left:65px;
+}
+
     #page-header .hamb-line {
     position: absolute;
     top: 90px;
     right: 150px;
         
 }
+
+    #page-body {
+        margin-top: 135px;
+    }
+    
+    #page-menu{
+        top:130px;
+    }
 
 }
 
