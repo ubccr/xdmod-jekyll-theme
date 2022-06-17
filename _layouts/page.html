@@ -45,6 +45,7 @@
 {% capture style_sheet %}{% if page.style %}{{ page.style }}{% else %}main{% endif %}{% endcapture %}
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if site.xdmod_module_name %}{{site.xdmod_module_name}} {{doc_path}}{% else %}Open XDMoD{% if page.title != 'Open XDMoD' %} - {{ page.title }}{% endif %}{% endif %}</title>
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.theme_subdir }}/assets/css/{{style_sheet}}.css" />
