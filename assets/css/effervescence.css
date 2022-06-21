@@ -665,7 +665,7 @@ div.page-menu-toc {
 
     #page-menu{
         width: 400px;
-        height: 100vw;
+        height: 100vh;
         position: fixed;
         background-color: #e0e0e0;
         overflow: auto;
@@ -773,7 +773,7 @@ div.page-menu-toc {
      span.maintitle {
         left: 0px;
         top: 0px;
-        font-size: 2.4em;
+        font-size: 9vw;
     }
 
     #page-header .xdmodlogo {
@@ -798,6 +798,7 @@ div.page-menu-toc {
     
     #page-menu{
         top:130px;
+        position: absolute;
     }
 
 }
