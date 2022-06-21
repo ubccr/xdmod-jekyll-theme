@@ -715,6 +715,11 @@ div.page-menu-toc {
     margin-top:80px;
     }
 
+     p img {
+        display: inline-block;
+        width: 100%;
+        }
+
     table {
         margin: 15px;
     }
