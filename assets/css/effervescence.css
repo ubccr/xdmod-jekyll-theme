@@ -656,7 +656,7 @@ div.page-menu-toc {
     width: 100%;
 }
     
-    h1, #page-content h2{
+    h1, #page-content h2, h3{
         margin-left: 15px;
     }
     
