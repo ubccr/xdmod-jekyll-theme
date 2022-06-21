@@ -710,6 +710,11 @@ div.page-menu-toc {
     color: #039;
     }
 
+    #page-menu ul ul {
+        background-color: #e7e7e7;
+        font-size: 77%
+    }
+
     #page-body {
     width: 100%;
     margin-top:80px;
