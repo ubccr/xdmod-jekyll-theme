@@ -251,17 +251,7 @@ div.page-menu-toc {
 .side-menu:checked ~ #page-menu{
     max-width: 100%;
 }
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
+
 
 /* end hamburger style */
 
@@ -634,7 +624,7 @@ div.page-menu-toc {
        position: absolute;
        right: 15px;
        top: 10px;
-       font-size: 2.4em;
+       font-size: 6vw;
     }
 
      #page-header img {
@@ -742,9 +732,6 @@ div.page-menu-toc {
 }
 
 @media only screen and (max-width: 610px){
-          span.maintitle {
-        font-size: 2.1em;
-    }
 
     #page-header .xdmodlogo {
     height: 30pt;
