@@ -252,6 +252,15 @@ div.page-menu-toc {
     max-width: 100%;
 }
 
+.side-menu:checked ~ #page-content{
+    z-index: -2;
+    position: fixed;
+}
+
+.side-menu:checked ~ #page-footer{
+    display: none; 
+}
+
 
 /* end hamburger style */
 
