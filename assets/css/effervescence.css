@@ -665,8 +665,8 @@ div.page-menu-toc {
 
     #page-menu{
         width: 400px;
-        height: 100vh;
-        position: absolute;
+        height: 100vw;
+        position: fixed;
         background-color: #e0e0e0;
         overflow: auto;
         top: 80px;
