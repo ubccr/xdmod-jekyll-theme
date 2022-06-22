@@ -603,26 +603,26 @@ div.page-menu-toc {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 
     .side-menu:checked ~ #page-menu{
-    max-width: 100%;
+        max-width: 100%;
     }
 
     .side-menu:checked ~ #page-content{
-    z-index: -2;
-    position: fixed;
+        z-index: -2;
+        position: fixed;
     }
 
     .side-menu:checked ~ #page-footer{
-    display: none; 
+        display: none; 
     }
 
-        #page-container {
-            width:100%;
-        }
+    #page-container {
+        width:100%;
+    }
     
-        #page-header{
+    #page-header{
         background-color: #fff;
         position: fixed;
         height: 80px;
@@ -637,40 +637,39 @@ div.page-menu-toc {
        font-size: 6vw;
     }
 
-     #page-header img {
-    position: relative;
+    #page-header img {
+        position: relative;
     }
 
     .hamb-line {
-    background: rgb(0, 51, 153);
-    display: block;
-    height: 4px;  
-    position: absolute; 
-    left: 15px;
-    top: 40px;
-    width: 35px;
- 
-}
+        background: rgb(0, 51, 153);
+        display: block;
+        height: 4px;  
+        position: absolute; 
+        left: 15px;
+        top: 40px;
+        width: 35px; 
+    }
     
-  #page-content {
-    margin: 0;
-    width: 100%;
-}
+    #page-content {
+        margin: 0;
+        width: 100%;
+    }
     
     h1, #page-content h2, h3{
         margin-left: 15px;
     }
     
     p {
-    margin: 0px 10px 30px 15px;
-    font-size: 16px;
+        margin: 0px 10px 30px 15px;
+        font-size: 16px;
     }
 
     #page-menu {
-    margin: 0px;
-    padding: 0px;
-    border-left: 0;
-    border-top: 0;
+        margin: 0px;
+        padding: 0px;
+        border-left: 0;
+        border-top: 0;
     }
 
     #page-menu{
@@ -699,8 +698,9 @@ div.page-menu-toc {
         text-align: center;
         font-size: 2.6em;
         padding-top: 10px;
-}
-    #page-menu li{
+    }
+
+    #page-menu li {
         text-align: center;
         list-style-type: none;
         font-size: 1.8em;
@@ -708,17 +708,17 @@ div.page-menu-toc {
     }
 
     #page-menu li:hover {
-    background-color: #ced5dd;
+        background-color: #ced5dd;
     }
 
     #page-menu a{
-    text-decoration: none;
-    display: block;
-    line-height: 1.2
-     }
+        text-decoration: none;
+        display: block;
+        line-height: 1.2
+    }
 
     #page-menu li a:hover {
-    color: #039;
+        color: #039;
     }
 
     #page-menu ul ul {
@@ -727,50 +727,54 @@ div.page-menu-toc {
     }
 
     div.page-menu-toc {
-    border-bottom: 0px solid #039;
-    margin-bottom: 0;
-    padding-bottom: 0;
+        border-bottom: 0px solid #039;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     #page-body {
-    width: 100%;
-    margin-top:80px;
+        width: 100%;
+        margin-top:80px;
     }
 
      p img {
         display: inline-block;
         width: 100%;
-        }
+     }
 
     table {
         margin: 15px;
     }
 
-    code {;
-    font-size: 100%;
-}
+    code {
+        font-size: 100%;
+    }
+
+   pre {
+       margin-left: 15px;
+    }
     
-    pre.highlight {
-    width: auto;
-    padding: auto;
-    margin: 15px 15px 15px 15px;
-}
+   pre.highlight {
+        width: auto;
+        padding: auto;
+        margin: 15px 15px 15px 15px;
+   }
 
    .language-plaintext.highlighter-rouge{
-   word-wrap: break-word;
-}
-
+       word-wrap: break-word;
+   }
+ 
 }
 
 @media only screen and (max-width: 610px){
 
     #page-header .xdmodlogo {
-    height: 30pt;
-}
+        height: 30pt;
+    }
 
-#page-header .nsflogo {
-    height: 50pt;
- }
+    #page-header .nsflogo {
+        height: 50pt;
+    }
 }
 
 @media only screen and (max-width: 545px){
@@ -780,11 +784,10 @@ div.page-menu-toc {
     }
 
     #page-header img {
-    position: absolute;
-    float: right;
-    bottom: 1px;
-    
-    }
+        position: absolute;
+        float: right;
+        bottom: 1px;
+     }
 
     #page-header {
         position: absolute;
@@ -798,20 +801,19 @@ div.page-menu-toc {
     }
 
     #page-header .xdmodlogo {
-    left: 150px;
-    height: 28pt;   
-    
-}
+        left: 150px;
+        height: 28pt;   
+    }
 
-      #page-header .nsflogo {
-    left:65px;
-}
+    #page-header .nsflogo {
+        left:65px;
+    }
 
-      .hamb {
-   position:absolute;
-    bottom: 1px;
-    padding: 40px 30px;
-}
+    .hamb {
+        position:absolute;
+        bottom: 1px;
+        padding: 40px 30px;
+    }
 
     #page-body {
         margin-top: 135px;
@@ -825,8 +827,8 @@ div.page-menu-toc {
 }
 
 
-@media (min-width: 701px) {
+@media (min-width: 851px) {
      .hamb-line {
-        display: none;
+         display: none;
      }
 }
