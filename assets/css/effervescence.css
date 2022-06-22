@@ -756,6 +756,10 @@ div.page-menu-toc {
     margin: 15px 15px 15px 15px;
 }
 
+   .language-plaintext.highlighter-rouge{
+   word-wrap: break-word;
+}
+
 }
 
 @media only screen and (max-width: 610px){
