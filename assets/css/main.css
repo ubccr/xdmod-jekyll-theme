@@ -193,3 +193,7 @@ span.maintitle
     top: 0px;
     width: 100%;
 }
+
+.side-menu {
+    display: none;
+}

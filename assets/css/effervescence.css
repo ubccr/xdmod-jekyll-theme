@@ -210,6 +210,48 @@ div.page-menu-toc {
     color: white;
 }
 
+/* Start hamburger style */
+
+.hamb{
+    cursor: pointer;
+    float: left;   
+    padding: 40px 30px;
+}
+
+.hamb-line {
+    background: rgb(0, 51, 153);
+    display: block;
+    height: 4px;   
+    position: relative;
+    width: 48px;
+ 
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: rgb(0, 51, 153);
+    content: '';   
+    display: block;
+    height: 100%;  
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 10px;
+}
+.hamb-line::after{
+    top: -10px;   
+}
+
+.side-menu {
+    display: none;
+}
+
+
+/* end hamburger style */
+
+
 .highlight pre {
     background-color: #202020;
 }
@@ -551,4 +593,242 @@ div.page-menu-toc {
     position: relative;
     top: 0px;
     width: 100%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1040px){
+    #page-content {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .side-menu:checked ~ #page-menu{
+        max-width: 100%;
+    }
+
+    .side-menu:checked ~ #page-content{
+        z-index: -2;
+        position: fixed;
+    }
+
+    .side-menu:checked ~ #page-footer{
+        display: none; 
+    }
+
+    #page-container {
+        width:100%;
+    }
+    
+    #page-header{
+        background-color: #fff;
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    span.maintitle {
+       position: absolute;
+       right: 15px;
+       top: 10px;
+       font-size: 6vw;
+    }
+
+    #page-header img {
+        position: relative;
+    }
+
+    .hamb-line {
+        background: rgb(0, 51, 153);
+        display: block;
+        height: 4px;  
+        position: absolute; 
+        left: 15px;
+        top: 40px;
+        width: 35px; 
+    }
+    
+    #page-content {
+        margin: 0;
+        width: 100%;
+    }
+    
+    h1, #page-content h2, h3{
+        margin-left: 15px;
+    }
+    
+    p {
+        margin: 0px 10px 30px 15px;
+        font-size: 16px;
+    }
+
+    #page-menu {
+        margin: 0px;
+        padding: 0px;
+        border-left: 0;
+        border-top: 0;
+    }
+
+    #page-menu{
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        background-color: #e0e0e0;
+        overflow: auto;
+        top: 80px;
+        left: 0px; 
+        right: 0px;
+        border-bottom: 0px;
+        padding-bottom: 0px;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.7), 20px 30px 20px 0 rgba(0, 0, 0, 0.10);
+    }
+    
+    #page-menu{
+        border: 0;
+        margin-bottom: 0em;
+        padding-bottom: 0px;
+        max-width: 0px;
+        transition: max-width .2s cubic-bezier(0.4, 0, 1, 1);
+    }
+    
+     #page-menu h2{
+        text-align: center;
+        font-size: 2.6em;
+        padding-top: 10px;
+    }
+
+    #page-menu li {
+        text-align: center;
+        list-style-type: none;
+        font-size: 1.8em;
+        padding: 8px
+    }
+
+    #page-menu li:hover {
+        background-color: #ced5dd;
+    }
+
+    #page-menu a{
+        text-decoration: none;
+        display: block;
+        line-height: 1.2
+    }
+
+    #page-menu li a:hover {
+        color: #039;
+    }
+
+    #page-menu ul ul {
+        background-color: #e7e7e7;
+        font-size: 77%
+    }
+
+    div.page-menu-toc {
+        border-bottom: 0px solid #039;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #page-body {
+        width: 100%;
+        margin-top:80px;
+    }
+
+     p img {
+        display: inline-block;
+        width: 100%;
+     }
+
+    table {
+        margin: 15px;
+    }
+
+    code {
+        font-size: 100%;
+    }
+
+   pre {
+       margin-left: 15px;
+    }
+    
+   pre.highlight {
+        width: auto;
+        padding: auto;
+        margin: 15px 15px 15px 15px;
+   }
+
+   .language-plaintext.highlighter-rouge{
+       word-wrap: break-word;
+   }
+ 
+}
+
+@media only screen and (max-width: 610px){
+
+    #page-header .xdmodlogo {
+        height: 30pt;
+    }
+
+    #page-header .nsflogo {
+        height: 50pt;
+    }
+}
+
+@media only screen and (max-width: 545px){
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    #page-header img {
+        position: absolute;
+        float: right;
+        bottom: 1px;
+     }
+
+    #page-header {
+        position: absolute;
+        height: 130px;
+    }
+    
+     span.maintitle {
+        left: 0px;
+        top: 0px;
+        font-size: 9vw;
+    }
+
+    #page-header .xdmodlogo {
+        left: 150px;
+        height: 28pt;   
+    }
+
+    #page-header .nsflogo {
+        left:65px;
+    }
+
+    .hamb {
+        position:absolute;
+        bottom: 1px;
+        padding: 40px 30px;
+    }
+
+    #page-body {
+        margin-top: 135px;
+    }
+    
+    #page-menu{
+        top:130px;
+        position: absolute;
+    }
+
+}
+
+
+@media (min-width: 851px) {
+     .hamb-line {
+         display: none;
+     }
 }
