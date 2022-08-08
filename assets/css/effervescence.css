@@ -632,7 +632,7 @@ div.page-menu-toc {
 
     span.maintitle {
        position: absolute;
-       right: 15px;
+       left: 15px;
        top: 10px;
        text-align: right;
        line-height: 1.2;	
