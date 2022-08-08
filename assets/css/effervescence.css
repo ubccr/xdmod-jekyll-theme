@@ -633,10 +633,9 @@ div.page-menu-toc {
     span.maintitle {
        position: absolute;
        left: 15px;
-       top: 10px;
-       text-align: right;
+       top: 5px;
        line-height: 1.2;	
-       font-size: 6vw;
+       font-size: 4.7vw;
     }
 
     #page-header img {
