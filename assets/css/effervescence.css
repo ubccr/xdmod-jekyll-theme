@@ -625,7 +625,7 @@ div.page-menu-toc {
     #page-header{
         background-color: #fff;
         position: fixed;
-        height: 80px;
+        height: 140px;
         width: 100%;
         z-index: 2;
     }
@@ -634,6 +634,8 @@ div.page-menu-toc {
        position: absolute;
        right: 15px;
        top: 10px;
+       text-align: right;
+       line-height: 1.2;	
        font-size: 6vw;
     }
 
@@ -647,7 +649,7 @@ div.page-menu-toc {
         height: 4px;  
         position: absolute; 
         left: 15px;
-        top: 40px;
+        top: 100px;
         width: 35px; 
     }
     
