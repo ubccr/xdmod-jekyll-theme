@@ -633,7 +633,7 @@ div.page-menu-toc {
     span.maintitle {
        position: absolute;
        left: 15px;
-       top: 5px;
+       top: 15px;
        line-height: 1.2;	
        font-size: 4.7vw;
     }
@@ -768,16 +768,6 @@ div.page-menu-toc {
  
 }
 
-@media only screen and (max-width: 610px){
-
-    #page-header .xdmodlogo {
-        height: 30pt;
-    }
-
-    #page-header .nsflogo {
-        height: 50pt;
-    }
-}
 
 @media only screen and (max-width: 545px){
 
@@ -797,22 +787,25 @@ div.page-menu-toc {
     }
     
      span.maintitle {
+	top: 2px;
         left: 0px;
-        top: 0px;
-        font-size: 4.7vw;
+        font-size: 20pt;
+	margin-right: 15px;
     }
 
     #page-header .xdmodlogo {
         left: 150px;
-        height: 28pt;   
+        top: 63px;
+	height: 25pt;   
     }
 
     #page-header .nsflogo {
         left:65px;
+	top: 54px;
+	height: 65px;
     }
 
     .hamb {
-        position:absolute;
         bottom: 1px;
         padding: 40px 30px;
     }
