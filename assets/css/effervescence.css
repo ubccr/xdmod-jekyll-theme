@@ -624,7 +624,7 @@ div.page-menu-toc {
     
     #page-header{
         background-color: #fff;
-        position: fixed;
+        position: absolute;
         height: 140px;
         width: 100%;
         z-index: 2;
@@ -677,10 +677,10 @@ div.page-menu-toc {
     #page-menu{
         width: 400px;
         height: 100vh;
-        position: fixed;
+        position: absolute;
         background-color: #e0e0e0;
         overflow: auto;
-        top: 80px;
+        top: 130px;
         left: 0px; 
         right: 0px;
         border-bottom: 0px;
