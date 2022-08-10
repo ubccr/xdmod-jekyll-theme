@@ -213,8 +213,10 @@ div.page-menu-toc {
 /* Start hamburger style */
 
 .hamb{
+    position: relative;
     cursor: pointer;
-    float: left;   
+    float: left;
+    top: 60px;   
     padding: 40px 30px;
 }
 
@@ -649,7 +651,7 @@ div.page-menu-toc {
         height: 4px;  
         position: absolute; 
         left: 15px;
-        top: 100px;
+        top: 35px;
         width: 35px; 
     }
     
