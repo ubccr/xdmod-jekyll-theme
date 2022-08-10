@@ -789,9 +789,9 @@ div.page-menu-toc {
      span.maintitle {
 	text-align: center;
 	line-height: 25px;
-	top: 10px;
+	top: 12px;
         left: 0px;
-        font-size: 20pt;
+        font-size: 7vw;
 	margin-right: 15px;
     }
 
