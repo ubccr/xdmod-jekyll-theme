@@ -213,8 +213,10 @@ div.page-menu-toc {
 /* Start hamburger style */
 
 .hamb{
+    position: relative;
     cursor: pointer;
-    float: left;   
+    float: left;
+    top: 60px;
     padding: 40px 30px;
 }
 
@@ -624,8 +626,8 @@ div.page-menu-toc {
     
     #page-header{
         background-color: #fff;
-        position: fixed;
-        height: 80px;
+        position: absolute;
+        height: 140px;
         width: 100%;
         z-index: 2;
     }
@@ -633,12 +635,14 @@ div.page-menu-toc {
     span.maintitle {
        position: absolute;
        right: 15px;
-       top: 10px;
-       font-size: 6vw;
+       top: 15px;
+       line-height: 1.2;
+       font-size: 4.7vw;
     }
 
     #page-header img {
         position: relative;
+        top: 50px;
     }
 
     .hamb-line {
@@ -647,7 +651,7 @@ div.page-menu-toc {
         height: 4px;  
         position: absolute; 
         left: 15px;
-        top: 40px;
+        top: 35px;
         width: 35px; 
     }
     
@@ -675,10 +679,10 @@ div.page-menu-toc {
     #page-menu{
         width: 400px;
         height: 100vh;
-        position: fixed;
+        position: absolute;
         background-color: #e0e0e0;
         overflow: auto;
-        top: 80px;
+        top: 140px;
         left: 0px; 
         right: 0px;
         border-bottom: 0px;
@@ -704,7 +708,7 @@ div.page-menu-toc {
         text-align: center;
         list-style-type: none;
         font-size: 1.8em;
-        padding: 8px
+        padding: 8px;
     }
 
     #page-menu li:hover {
@@ -714,7 +718,7 @@ div.page-menu-toc {
     #page-menu a{
         text-decoration: none;
         display: block;
-        line-height: 1.2
+        line-height: 1.2;
     }
 
     #page-menu li a:hover {
@@ -734,7 +738,7 @@ div.page-menu-toc {
 
     #page-body {
         width: 100%;
-        margin-top:80px;
+        margin-top:140px;
     }
 
      p img {
@@ -766,17 +770,6 @@ div.page-menu-toc {
  
 }
 
-@media only screen and (max-width: 610px){
-
-    #page-header .xdmodlogo {
-        height: 30pt;
-    }
-
-    #page-header .nsflogo {
-        height: 50pt;
-    }
-}
-
 @media only screen and (max-width: 545px){
 
     h1{
@@ -795,22 +788,27 @@ div.page-menu-toc {
     }
     
      span.maintitle {
+        text-align: center;
+        line-height: 25px;
         left: 0px;
-        top: 0px;
-        font-size: 9vw;
+        top: 12px;
+        font-size: 7.5vw;
+        margin-right: 15px;
     }
 
     #page-header .xdmodlogo {
         left: 150px;
-        height: 28pt;   
+        top: 63px;
+        height: 25pt;   
     }
 
     #page-header .nsflogo {
         left:65px;
+        top: 54px;
+        height: 65px;
     }
 
     .hamb {
-        position:absolute;
         bottom: 1px;
         padding: 40px 30px;
     }
