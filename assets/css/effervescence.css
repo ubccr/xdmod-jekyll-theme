@@ -64,6 +64,7 @@ li code {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    margin-bottom: 16px;
 }
 
 th {
