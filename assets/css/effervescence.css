@@ -598,6 +598,28 @@ div.page-menu-toc {
     width: 100%;
 }
 
+div .patch-info {
+    padding: 1ex;
+    margin-bottom: 2em;
+    color: white;
+    border-radius: 5px;
+    background-color: #9e2812;
+    background-image: linear-gradient(to bottom, #9e2812 0%, #6f0d0d 100%);
+}
+
+div .patch-info code {
+    border: 0;
+    color: white;
+}
+
+div .patch-info a:visited {
+    color: gray
+}
+
+div .patch-info a {
+    color: white
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1040px){
@@ -735,6 +757,11 @@ div.page-menu-toc {
         border-bottom: 0px solid #039;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+
+    div.patch-info {
+       margin-left: 1ex;
+       margin-right: 1ex;
     }
 
     #page-body {

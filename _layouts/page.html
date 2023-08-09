@@ -61,7 +61,7 @@
 </head>
 <body>
   <div id="page-container">
-    {% unless site.version_list contains page.version %} <div class="not-supported-banner"><center> This version is <a href='/{{site.latest_version}}/support.html'>no longer supported</a>. The latest version is <a href="/{{site.latest_version}}/">Open XDMoD {{site.latest_version}}</a>. </center></div> {% endunless %}  
+    {% unless site.version_list contains page.version %} <div class="not-supported-banner"><center> This version is <a href='/{{site.latest_version}}/support.html'>no longer supported</a>. The latest version is <a href="/{{site.latest_version}}/">Open XDMoD {{site.latest_sw_version}}</a>. </center></div> {% endunless %}
     <div id="page-header" role="banner">
       {% if page.style %}<a href="https://www.nsf.gov"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" class='nsflogo' /></a>{% endif %}
       <a href="http://open.xdmod.org"><img src="{{ site.baseurl }}{{ site.theme_subdir }}/assets/images/xdmod_logo.png" alt="XDMoD" class='xdmodlogo' /></a>
@@ -78,7 +78,9 @@
           {% if table_of_contents %}<div class="page-menu-toc">{{ table_of_contents }}</div>{% endif %}
           {% if site.version_list %}
             {% if site.latest_version == page.version %}
-                <h2>Older versions</h2>
+                {% if site.version_list.size > 1 %}
+                    <h2>Older versions</h2>
+                {% endif %}
             {% else %}
                 <h2>Other versions</h2>
             {% endif %}
@@ -90,6 +92,16 @@
                         (latest)
                         {% endif %}
                     </a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+         {% endif %}
+         {% if site.unsupported_version_list and site.unsupported_version_list.size != 0 %}
+                <h2>Unsupported versions</h2>
+            <ul>
+            {% for item in site.unsupported_version_list %}
+                {% if item != page.version %}
+                    <li><a href="{{ site.baseurl }}/{{ item }}">{{ item }}</a></li>
                 {% endif %}
             {% endfor %}
             </ul>
