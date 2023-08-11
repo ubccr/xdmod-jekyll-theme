@@ -598,25 +598,47 @@ div.page-menu-toc {
     width: 100%;
 }
 
-div .patch-info {
+div.alertbox {
     padding: 1ex;
     margin-bottom: 2em;
-    color: white;
     border-radius: 5px;
-    background-color: #9e2812;
-    background-image: linear-gradient(to bottom, #9e2812 0%, #6f0d0d 100%);
 }
 
-div .patch-info code {
+div .info {
+    color: white;
+    background-color: #6eade0;
+    background-image: linear-gradient(to bottom, #6eade0 0%, #1f58ad 100%);
+}
+
+div .info code {
     border: 0;
     color: white;
 }
 
-div .patch-info a:visited {
+div .info a {
+    color: white
+}
+
+div .info a:visited {
     color: gray
 }
 
-div .patch-info a {
+div .warning {
+    color: white;
+    background-color: #9e2812;
+    background-image: linear-gradient(to bottom, #9e2812 0%, #6f0d0d 100%);
+}
+
+div .warning code {
+    border: 0;
+    color: white;
+}
+
+div .warning a:visited {
+    color: gray
+}
+
+div .warning a {
     color: white
 }
 
@@ -759,7 +781,7 @@ div .patch-info a {
         padding-bottom: 0;
     }
 
-    div.patch-info {
+    div.alertbox {
        margin-left: 1ex;
        margin-right: 1ex;
     }
