@@ -192,7 +192,7 @@ div.page-menu-toc {
 .page-menu-toc ul {
     margin: 0;
     margin-bottom: 1em;
-    padding: 1ex;
+    padding: 0.5ex;
     list-style-position: inside;
     display: block;
     line-height: 140%;
