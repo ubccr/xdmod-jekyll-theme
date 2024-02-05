@@ -75,7 +75,14 @@
       <div class="clear"></div>
       <input class="side-menu" type="checkbox" id="side-menu"/>
       <div id="page-menu" role="navigation">
-          {% if table_of_contents %}<div class="page-menu-toc">{{ table_of_contents }}</div>{% endif %}
+          <div class="page-menu-toc">
+            {% if table_of_contents %}
+              {{ table_of_contents }}
+            {% elsif page.menu_markdown %}
+              {% capture menu_markdown %}{% include {{page.menu_markdown}} %}{% endcapture %}
+              {{ menu_markdown | markdownify }}
+            {% endif %}
+          </div>
           {% if site.version_list %}
             {% if site.latest_version == page.version %}
                 {% if site.version_list.size > 1 %}
@@ -106,10 +113,6 @@
             {% endfor %}
             </ul>
          {% endif %}
-        {% if page.menu_markdown %}
-            {% capture menu_markdown %}{% include {{page.menu_markdown}} %}{% endcapture %}
-            {{ menu_markdown | markdownify }}
-        {% endif %}
       </div>
       <div id="page-content" role="main">
         {% if doc_path %} <h1>{{ doc_path }}</h1> {% else %} <h1>{{ page.title }}</h1> {% endif %}
