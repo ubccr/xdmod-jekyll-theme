@@ -590,7 +590,13 @@ div.page-menu-toc {
     color: #438dc4;
 }
 
-/* for unsupported versions */
+/* for old and unsupported versions */
+.not-latest-banner{
+    background-color:#EED202;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
 .not-supported-banner{
     background-color:#EF9A9A;
     position: relative;

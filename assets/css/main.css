@@ -186,7 +186,13 @@ span.maintitle
     padding: 10px;
 }
 
-/* for unsupported versions */
+/* for old and unsupported versions */
+.not-latest-banner{
+    background-color:#EED202;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
 .not-supported-banner{
     background-color:#EF9A9A;
     position: relative;
