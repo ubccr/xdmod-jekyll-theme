@@ -610,14 +610,28 @@ div.alertbox {
     border-radius: 5px;
 }
 
+pre code {
+  display: block;
+  background: none;
+  white-space: pre;
+  max-width: 90%;
+  min-width: 100px;
+  padding: 0;
+}
+
 div .info {
     color: white;
     background-color: #6eade0;
     background-image: linear-gradient(to bottom, #6eade0 0%, #1f58ad 100%);
 }
 
+div .info h3 {
+    color: white;
+}
+
 div .info code {
     border: 0;
+    font-family: monospace;
     color: white;
 }
 
@@ -626,7 +640,7 @@ div .info a {
 }
 
 div .info a:visited {
-    color: gray
+    color: lightgray
 }
 
 div .warning {
@@ -635,13 +649,18 @@ div .warning {
     background-image: linear-gradient(to bottom, #9e2812 0%, #6f0d0d 100%);
 }
 
+div .warning h3 {
+    color: white;
+}
+
 div .warning code {
     border: 0;
+    font-family: monospace;
     color: white;
 }
 
 div .warning a:visited {
-    color: gray
+    color: lightgray
 }
 
 div .warning a {
