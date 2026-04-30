@@ -122,7 +122,7 @@
          {% endif %}
       </div>
       <div id="page-content" role="main">
-        {% if site.collections.security_patches %}
+        {% if site.security_patches %}
             {% include security_advisory.html %}
         {% endif %}
         {% if doc_path %} <h1>{{ doc_path }}</h1> {% else %} <h1>{{ page.title }}</h1> {% endif %}
