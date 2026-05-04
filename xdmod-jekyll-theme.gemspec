@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ubccr/xdmod-jekyll-theme"
   spec.license       = "LGPL-3.0-only"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_includes|_layouts|assets|LICENSE|README.md)/i}) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|assets|LICENSE|README.md)/i}) }
 
   spec.required_ruby_version = ">= 2.3.0"
   spec.add_development_dependency "jekyll", "~> 3.9"
