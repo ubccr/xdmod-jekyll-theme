@@ -165,7 +165,7 @@ pre.highlight {
     background-color: #202020;
     overflow: auto;
     color: #e0e0e0;
-    width: 850px;
+    width: 100%;
     border-radius: 0.5ex;
     padding: 0.2em;
 }
